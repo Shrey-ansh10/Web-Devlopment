@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <form action="" >
+        <h1>Payment Form</h1>
+        
+        <h2>Personal Info</h2>
+        <p>Name:* <input type="text" name="name" required> </p>
+        
+        
+        <p>
+            <fieldset>
+            <legend>    
+            <h3>Gender</h3> 
+                </legend>
+                
+                    Male<input type="radio" name="gender" id="male" > 
+                    Female<input type="radio" name="gender" id="female"> 
+                    Others<input type="radio" name="others" id="others"> 
+                </fieldset>
+        </p>
+
+        <p>
+            Address :* <textarea cols="100" rows="5" required></textarea>
+        </p>
+
+        <p>Email : <input type="email" name="email" id="email"> </p>
+
+        <p>Contact Number : * <input type="number" name="contactnumber" id="contact number" required></p>
+
+        <p>Pin Code : * <input type="number" name="pincode" id="pincode" required></p>
+
+        <hr>
+        <h2>Payment Info</h2>
+
+        <p>Card type
+            <select name="cardtype" id="cardtype" required>          <!-- select tag is used to let user choose from multiple options -->
+                <option value="">Select a Card type</option>    <!-- option tag displays the options in the list -->
+                <option value="Visa"> Visa </option>    
+                <option value="Rupay"> Rupay </option>    
+                <option value="Master"> Master </option>    
+            
+            </select>
+        </p>
+
+        <p>
+            Card Number : * <input type="number" name="card_number" id="card_number" required>
+        </p>
+
+        <p> CVV :* <input type="password" name="cvv" id="cvv" required></p>
+        
+        <p> Expiry Date :* <input type="date" name="expirydate" id="expirydate" required> </p>
+        
+          <input type="submit" value="PAY NOW">
+    
+       <!-- <button>SUBMIT</button> -->
+
+    </form>
+</body>
+</html>
